@@ -3,6 +3,7 @@
 view projects: https://aref-jsminiprojects.000webhostapp.com/
 
 projects:
+```
           Todo List
           change Bg Color
           BMI
@@ -10,3 +11,4 @@ projects:
           Count Down
           Counter
           Guessing Game
+```
