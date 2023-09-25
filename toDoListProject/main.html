@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To do List</title>
+  </head>
+  <body>
+    <header><h1>To Do List</h1></header>
+    <div class="form">
+      <form>
+        <input type="text" class="input" />
+        <button class="add">
+          <img src=".//assets/images/add-circle-svgrepo-com.svg" alt="add" />
+        </button>
+      </form>
+      <div class="select">
+        <select name="todos" class="filter-todos">
+          <option value="all">
+            <h3>All</h3>
+          </option>
+          <option value="completed">
+            <h3>Completed</h3>
+          </option>
+          <option value="uncompleted">
+            <h3>Uncompleted</h3>
+          </option>
+        </select>
+      </div>
+    </div>
+    <ul></ul>
+    <script src="./index.js"></script>
+  </body>
+</html>

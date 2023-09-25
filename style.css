@@ -1,0 +1,48 @@
+.container,
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+h1 {
+    font-size: 32px;
+}
+button {
+    background: #6d28d9;
+    padding: 0;
+    min-height: 60px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px 1px rgb(32, 31, 31);
+}
+button:hover a {
+    transform: scale(1.07);
+}
+a {
+    padding: 30px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+/* Fonts */
+@font-face {
+    font-family: "iranyekan";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./toDoListProject/assets/fonts/iranyekanwebregular.woff")
+        format("woff");
+}
+
+body,
+button,
+a,
+input {
+    font-family: "iranyekan";
+}

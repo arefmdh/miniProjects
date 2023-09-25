@@ -1,0 +1,167 @@
+/* Fonts */
+@font-face {
+  font-family: "iranyekan";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../toDoList/assets/fonts/iranyekanwebregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iranyekan";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../toDoList/assets/fonts/iranyekanwebbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iranyekan";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../toDoList/assets/fonts/iranyekanweblight.woff") format("woff");
+}
+
+body,
+button,
+a,
+input {
+  font-family: "iranyekan";
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Root */
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGray: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+img {
+  cursor: pointer;
+  width: 24px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mainWhite);
+  border-radius: 10px;
+  min-width: 40rem;
+  overflow: hidden;
+  margin-right: 5rem;
+}
+.form form input,
+.form form button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+.form form button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--mainTransition);
+}
+.form form input {
+  margin-left: 1rem;
+  flex: 1 1;
+}
+.form form button img {
+  margin: 1rem 0.5rem;
+}
+.form form button:hover {
+  background-color: var(--primaryColor);
+}
+.form form button:hover img {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(99%) saturate(3%)
+    hue-rotate(299deg) brightness(105%) contrast(100%);
+}
+ul {
+  min-width: 65rem;
+  margin-top: 1rem;
+}
+.todo {
+  background-color: var(--secondaryColor);
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.todo img {
+  margin-right: 0.3rem;
+}
+.todo li {
+  flex: 1;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  color: var(--primaryColor);
+}
+.select {
+  position: relative;
+  width: 20rem;
+}
+.filter-todos {
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+  color: var(--primaryColor);
+  border-radius: 10px;
+  background-color: var(--mainWhite);
+  cursor: pointer;
+  min-width: 100%;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  color: var(--primaryColor);
+  top: 0;
+  right: 0;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  pointer-events: none;
+}
+/* dynamic */
+ul .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

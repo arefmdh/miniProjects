@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+}
+.btn {
+    cursor: pointer;
+    width: 10rem;
+    height: 3.6rem;
+    background-color: rgb(84, 84, 240);
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+.btn h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px 1px rgb(32, 31, 31);
+}
+.btn:hover h1 {
+    transform: scale(1.07);
+}
+.container > h1 {
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
